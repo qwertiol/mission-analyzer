@@ -1,11 +1,11 @@
 public class Sorcerer {
     private String name;
-    private Rank rank;
+    private String rank;
 
     public Sorcerer() {
     }
 
-    public Sorcerer(String name, Rank rank) {
+    public Sorcerer(String name, String rank) {
         this.name = name;
         this.rank = rank;
     }
@@ -18,11 +18,11 @@ public class Sorcerer {
         this.name = name;
     }
 
-    public Rank getRank() {
+    public String getRank() {
         return rank;
     }
 
-    public void setRank(Rank rank) {
+    public void setRank(String rank) {
         this.rank = rank;
     }
 }

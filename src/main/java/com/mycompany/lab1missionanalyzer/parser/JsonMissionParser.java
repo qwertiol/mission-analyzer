@@ -8,7 +8,7 @@ public class JsonMissionParser implements MissionParser {
 
     public JsonMissionParser() {
         mapper = new ObjectMapper();
-        mapper.registerModule(new JavaTimeModule()); // для поддержки LocalDate
+        mapper.registerModule(new JavaTimeModule()); // для LocalDate
     }
 
     @Override

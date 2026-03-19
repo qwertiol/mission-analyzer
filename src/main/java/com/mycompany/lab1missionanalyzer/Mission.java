@@ -5,17 +5,17 @@ public class Mission {
     private String missionId;
     private LocalDate date;
     private String location;
-    private Outcome outcome;
+    private String outcome;
     private long damageCost;
     private Curse curse;
     private List<Sorcerer> sorcerers;
     private List<Technique> techniques;
-    private String comment; // опционально
+    private String comment; // для файлов В
 
     public Mission() {
     }
 
-    public Mission(String missionId, LocalDate date, String location, Outcome outcome,
+    public Mission(String missionId, LocalDate date, String location, String outcome,
                    long damageCost, Curse curse, List<Sorcerer> sorcerers,
                    List<Technique> techniques, String comment) {
         this.missionId = missionId;
@@ -29,7 +29,7 @@ public class Mission {
         this.comment = comment;
     }
 
-    // Геттеры и сеттеры
+    // Миллион геттеров и сеттеров
     public String getMissionId() {
         return missionId;
     }
@@ -54,11 +54,11 @@ public class Mission {
         this.location = location;
     }
 
-    public Outcome getOutcome() {
+    public String getOutcome() {
         return outcome;
     }
 
-    public void setOutcome(Outcome outcome) {
+    public void setOutcome(String outcome) {
         this.outcome = outcome;
     }
 

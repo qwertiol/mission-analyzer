@@ -26,16 +26,16 @@ public class TxtMissionParser implements MissionParser {
         mission.setMissionId(map.get("missionId"));
         mission.setDate(LocalDate.parse(map.get("date")));
         mission.setLocation(map.get("location"));
-        mission.setOutcome(Outcome.valueOf(map.get("outcome")));
+        mission.setOutcome(map.get("outcome"));
         mission.setDamageCost(Long.parseLong(map.get("damageCost")));
 
         // Проклятие
         Curse curse = new Curse();
         curse.setName(map.get("curse.name"));
-        curse.setThreatLevel(ThreatLevel.valueOf(map.get("curse.threatLevel")));
+        curse.setThreatLevel(map.get("curse.threatLevel"));
         mission.setCurse(curse);
 
-        // Маги: ключи вида sorcerer[0].name, sorcerer[0].rank
+        // Маги
         List<Sorcerer> sorcerers = new ArrayList<>();
         // Собираем все индексы магов
         Set<Integer> sorcererIndices = new TreeSet<>();
@@ -50,7 +50,7 @@ public class TxtMissionParser implements MissionParser {
         for (Integer idx : sorcererIndices) {
             Sorcerer s = new Sorcerer();
             s.setName(map.get("sorcerer[" + idx + "].name"));
-            s.setRank(Rank.valueOf(map.get("sorcerer[" + idx + "].rank")));
+            s.setRank(map.get("sorcerer[" + idx + "].rank"));
             sorcerers.add(s);
         }
         mission.setSorcerers(sorcerers);
@@ -69,7 +69,7 @@ public class TxtMissionParser implements MissionParser {
         for (Integer idx : techIndices) {
             Technique t = new Technique();
             t.setName(map.get("technique[" + idx + "].name"));
-            t.setType(TechniqueType.valueOf(map.get("technique[" + idx + "].type")));
+            t.setType(map.get("technique[" + idx + "].type"));
             t.setOwner(map.get("technique[" + idx + "].owner"));
             t.setDamage(Long.parseLong(map.get("technique[" + idx + "].damage")));
             techniques.add(t);

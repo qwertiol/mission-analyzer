@@ -1,17 +1,16 @@
 public class Curse {
     private String name;
-    private ThreatLevel threatLevel;
+    private String threatLevel;
 
-    // Пустой конструктор обязателен для Jackson
+    // Пустой конструктор обязателен для Jackson вроде?
     public Curse() {
     }
 
-    public Curse(String name, ThreatLevel threatLevel) {
+    public Curse(String name, String threatLevel) {
         this.name = name;
         this.threatLevel = threatLevel;
     }
 
-    // Геттеры и сеттеры
     public String getName() {
         return name;
     }
@@ -20,11 +19,11 @@ public class Curse {
         this.name = name;
     }
 
-    public ThreatLevel getThreatLevel() {
+    public String getThreatLevel() {
         return threatLevel;
     }
 
-    public void setThreatLevel(ThreatLevel threatLevel) {
+    public void setThreatLevel(String threatLevel) {
         this.threatLevel = threatLevel;
     }
 }

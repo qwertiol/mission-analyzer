@@ -1,13 +1,13 @@
 public class Technique {
     private String name;
-    private TechniqueType type;
+    private String type;
     private String owner;
     private long damage;
 
     public Technique() {
     }
 
-    public Technique(String name, TechniqueType type, String owner, long damage) {
+    public Technique(String name, String type, String owner, long damage) {
         this.name = name;
         this.type = type;
         this.owner = owner;
@@ -22,11 +22,11 @@ public class Technique {
         this.name = name;
     }
 
-    public TechniqueType getType() {
+    public String getType() {
         return type;
     }
 
-    public void setType(TechniqueType type) {
+    public void setType(String type) {
         this.type = type;
     }
 
