@@ -10,7 +10,7 @@
         <!-- ставлю версию джавы ниже тк версия в терминале ниже версии в ide-->
         <maven.compiler.source>23</maven.compiler.source>
         <maven.compiler.target>23</maven.compiler.target>
-        <exec.mainClass>Main</exec.mainClass>
+        <exec.mainClass>om.mycompany.lab1missionanalyzer.Main</exec.mainClass>
     </properties>
     <dependencies>
         <!-- Jackson для JSON -->
@@ -45,7 +45,7 @@
                 </descriptorRefs>
                 <archive>
                     <manifest>
-                        <mainClass>Main</mainClass> <!-- укажите ваш главный класс -->
+                        <mainClass>com.mycompany.lab1missionanalyzer.Main</mainClass>
                     </manifest>
                 </archive>
             </configuration>

@@ -11,7 +11,7 @@ public class Sorcerer {
         this.name = name;
         this.rank = rank;
     }
-
+    
     public String getName() {
         return name;
     }
