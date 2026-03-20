@@ -1,3 +1,5 @@
+package com.mycompany.lab1missionanalyzer;
+
 import java.time.LocalDate;
 import java.util.List;
 

@@ -1,3 +1,6 @@
+package com.mycompany.lab1missionanalyzer.parser;
+
+import com.mycompany.lab1missionanalyzer.*;
 import java.io.File;
 import java.io.IOException;
 

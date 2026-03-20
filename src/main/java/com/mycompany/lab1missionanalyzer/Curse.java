@@ -1,3 +1,5 @@
+package com.mycompany.lab1missionanalyzer;
+
 public class Curse {
     private String name;
     private String threatLevel;

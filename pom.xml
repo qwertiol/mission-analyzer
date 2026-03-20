@@ -7,6 +7,7 @@
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- ставлю версию джавы ниже тк версия в терминале ниже версии в ide-->
         <maven.compiler.source>23</maven.compiler.source>
         <maven.compiler.target>23</maven.compiler.target>
         <exec.mainClass>Main</exec.mainClass>
@@ -31,6 +32,7 @@
             <version>2.15.2</version>
         </dependency>
     </dependencies>
+    <!-- блок от дипсика - нужен для нормальной сборки в терминале-->
     <build>
         <plugins>
         <plugin>

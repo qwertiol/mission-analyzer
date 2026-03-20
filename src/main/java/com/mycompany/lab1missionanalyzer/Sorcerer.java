@@ -1,3 +1,5 @@
+package com.mycompany.lab1missionanalyzer;
+
 public class Sorcerer {
     private String name;
     private String rank;

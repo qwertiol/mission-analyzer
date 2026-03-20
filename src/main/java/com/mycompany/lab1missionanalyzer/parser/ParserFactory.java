@@ -1,3 +1,5 @@
+package com.mycompany.lab1missionanalyzer.parser;
+
 import java.io.File;
 
 public class ParserFactory {

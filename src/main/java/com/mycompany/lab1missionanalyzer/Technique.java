@@ -1,3 +1,5 @@
+package com.mycompany.lab1missionanalyzer;
+
 public class Technique {
     private String name;
     private String type;
